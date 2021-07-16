@@ -1,0 +1,27 @@
+github:
+  features:
+    # Enable issue management
+    issues: true
+
+notifications:
+  commits: site-cvs@apache.org
+  issues: site-cvs@apache.org
+  pullrequests: site-cvs@apache.org
+  jira_options: link label
+
+pelican:
+  notify: site-cvs@apache.org
+  autobuild: preview/*
+  target: asf-site
+  theme: theme/apache
+  minimum_page_count: 200
+  whoami: main
+
+staging:
+  profile: ~
+  whoami: asf-site
+  autostage: preview/*
+  
+publish:
+  profile: ~
+  whoami: asf-site
