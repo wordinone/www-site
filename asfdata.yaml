@@ -80,19 +80,15 @@ pods:
   podlings:
     description: 'Current Podlings'
     # create a sequence from the dictionary
+    size: -1
   featured_pods:
     description: 'Featured Podlings'
     # based on the podlings sequence
-    sequence: podlings
+    sequence: podlings.main
     # take a random sample of 3
     random: 3
     # logo path - use incubator if missing. Strip "Apache" and "(incubator)" from name.
     logo: /logos/res/{}/default.png,/logos/res/incubator/default.png
-  podlings_size:
-    # base of podlings sequence
-    sequence: podlings
-    # base value will be overwritten
-    size: -1
 
 # used on licenses/exports/index.ezmd
 eccn:
